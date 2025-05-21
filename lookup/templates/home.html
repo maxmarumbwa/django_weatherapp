@@ -9,10 +9,12 @@ There was an error, please try again...
 <div class="jumbotron">
     <h1 class="display-4">{{ api.0.Category.Name }}</h1>
     <p class="lead">Current {{ api.0.ReportingArea }}
-        Quality: {{ api.0.AQI }}
-    </p>
-    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        Quality: {{ api.0.AQI }}</p>
 
+    {% if api.0.Category.Name == "Moderate" %}
+    <p>(50-100) Air Qaulity is considered satisfactory and poses no risk</p>
+
+    {% endif %}
     {% endif %}
     {% endif %}
 
