@@ -6,7 +6,7 @@
 {% if api == "Error..." %}
 There was an error, please try again...
 {% else %}
-<div class="jumbotron">
+<div class="jumbotron good">
     <h1 class="display-4">{{ api.0.Category.Name }}</h1>
     <p class="lead">Current {{ api.0.ReportingArea }}
         Quality: {{ api.0.AQI }}</p>
@@ -17,5 +17,4 @@ There was an error, please try again...
     {% endif %}
     {% endif %}
     {% endif %}
-
     {% endblock %}
